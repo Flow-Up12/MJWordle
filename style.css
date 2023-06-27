@@ -1,0 +1,165 @@
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 50px;
+    color: white;
+}
+
+body {
+    background: black;
+}
+
+hr {
+    width: 90%;
+}
+
+.box {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    margin: 2px;
+    display: inline-block;
+    font-size: 40px;
+    text-align: center;
+    overflow: hidden;
+}
+.error {
+    color: red;
+    font-size: 50px;
+    margin-top: -30px;
+    display:none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.centered {
+    font-size: 50px;
+    color: black;
+    line-height: 55px;
+}
+.letter:hover{ 
+    background-color: lightgray;
+}
+.letter {
+    width: 50px;
+    height: 60px; /* Adjusted height to 60px */
+    font-style: bold;
+    background-color: white;
+    margin: 2px;
+    display: inline-block;
+    font-size: 40px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    color:black;
+    
+}
+#box31{
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    margin: 2px;
+    display: inline-block;
+    font-size: 40px;
+    text-align: center;
+    overflow: hidden;
+}
+    #bottom {
+        display: flex; /* Add this line */
+        justify-content: center; /* Optional: If you want to center the items horizontally */
+    }  
+
+#enter {
+    width: 100px;
+    height: 60px; /* Adjusted height to 60px */
+}
+#enter img {
+    margin-top: -3px;
+    height: 60px;
+    width: 80px;
+}
+
+#delete {
+    width: 70px;
+}
+#delete img{
+    height: 55px;
+}
+
+#middle {
+    margin-left: 30px;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+
+.flip {
+
+    animation-name: flipAnimation;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes flipAnimation {
+    0% {
+      transform: rotateX(0deg);
+    }
+    50% {
+      transform: rotateX(90deg);
+     
+    }
+    100% {
+      transform: rotateX(0deg);
+    }
+  }
+
+  .correct img {
+    position: relative;
+    margin-top: -480px; 
+    display: none;
+    opacity: 100;
+  }
+  
+  .slide {
+    animation-name: slideAnimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  .incorrect{
+    display:none;
+    position: absolute;
+    margin-top: -215px;
+    height:440px;
+    width: 400px;
+    background-color: white;
+    border: 3px solid gray;
+    text-align: center;
+    font-size:35px;
+    line-height: 80px;
+    
+}
+.incorrect img {
+    height: 300px;
+    width: 400px;
+}
+
+  @keyframes slideAnimation {
+    0% {
+        margin-top: -2000px;
+         
+    }
+    100% {
+        margin-top: -480px; 
+    }
+  }
