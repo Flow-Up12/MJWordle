@@ -9,6 +9,14 @@ body {
     background: black;
 }
 
+html, body {
+    height: 100%;
+    margin: 0; 
+    align-items: center;
+    justify-content: center;
+     /* Change this to your desired background color */
+  }
+
 hr {
     width: 90%;
 }
